@@ -1,0 +1,1 @@
+I used a DLB to save the passwords. I found it easier to do this since I already had methods to insert data to a DLB efficiently. Also the DLB does not waste space, and the words inserted would become more sparse so an r-way trie would have wasted space.
