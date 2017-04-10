@@ -1,0 +1,169 @@
+
+all.tar	
+	original file size: 3 MB
+	compressed file size:
+		Unmodified LZW: 1.8 MB
+		MyLZW do nothing mode: 1.8 MB
+		MyLZW reset mode: 1.2 MB
+		MyLZW monitor mode: 1.8 MB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 1.66
+		MyLZW do nothing mode: 1.66
+		MyLZW reset mode: 2.5
+		MyLZW monitor mode: 1.66
+assig2.doc
+	original file size: 87 KB
+	compressed file size:
+		Unmodified LZW: 40 KB
+		MyLZW do nothing mode: 40 KB
+		MyLZW reset mode: 40 KB
+		MyLZW monitor mode: 40 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 2.175
+		MyLZW do nothing mode:2.175
+		MyLZW reset mode:2.175
+		MyLZW monitor mode:2.175
+bmps.tar   
+	original file size: 1.1 MB
+	compressed file size:
+		Unmodified LZW: 925 KB
+		MyLZW do nothing mode: 81 KB
+		MyLZW reset mode: 81 KB
+		MyLZW monitor mode: 81 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 1.19
+		MyLZW do nothing mode: 13.58
+		MyLZW reset mode: 13.58
+		MyLZW monitor mode: 13.58
+code.txt
+	original file size: 72 KB
+	compressed file size:
+		Unmodified LZW: 31 KB
+		MyLZW do nothing mode: 25 KB
+		MyLZW reset mode: 25 KB
+		MyLZW monitor mode: 25 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 2.23
+		MyLZW do nothing mode: 2.88
+		MyLZW reset mode: 2.88
+		MyLZW monitor mode: 2.88
+code2.txt
+	original file size: 58 KB
+	compressed file size:
+		Unmodified LZW: 24 KB
+		MyLZW do nothing mode: 21 KB
+		MyLZW reset mode: 21 KB
+		MyLZW monitor mode: 21 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 2.41
+		MyLZW do nothing mode:2.76
+		MyLZW reset mode: 2.76
+		MyLZW monitor mode: 2.76
+edit.exe
+	original file size: 236 KB
+	compressed file size:
+		Unmodified LZW: 251 KB
+		MyLZW do nothing mode: 156 KB
+		MyLZW reset mode: 152 KB
+		MyLZW monitor mode: 156 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: .94
+		MyLZW do nothing mode: 1.51
+		MyLZW reset mode: 1.55
+		MyLZW monitor mode: 1.51
+frosty.jpg
+	original file size: 127 KB
+	compressed file size:
+		Unmodified LZW: 177 KB
+		MyLZW do nothing mode: 164 KB 
+		MyLZW reset mode: 171 KB
+		MyLZW monitor mode: 164 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: .717
+		MyLZW do nothing mode: .77
+		MyLZW reset mode: .74
+		MyLZW monitor mode: .77
+gone_fishing.bmp
+	original file size: 17 KB
+	compressed file size:
+		Unmodified LZW: 9 KB
+		MyLZW do nothing mode: 9 KB
+		MyLZW reset mode: 9 KB
+		MyLZW monitor mode: 9 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 1.88
+		MyLZW do nothing mode: 1.88
+		MyLZW reset mode: 1.88
+		MyLZW monitor mode: 1.88
+large.txt
+	original file size: 1.2 MB
+	compressed file size: 
+		Unmodified LZW: 605 KB
+		MyLZW do nothing mode: 502 KB
+		MyLZW reset mode: 528 KB
+		MyLZW monitor mode: 502 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 1.98
+		MyLZW do nothing mode: 2.39
+		MyLZW reset mode: 2.27
+		MyLZW monitor mode: 2.39
+Lego-big.gif
+	original file size: 93 KB
+	compressed file size:
+		Unmodified LZW: 129 KB 
+		MyLZW do nothing mode: 122 KB
+		MyLZW reset mode: 122 KB
+		MyLZW monitor mode: 122 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: .72
+		MyLZW do nothing mode: .76
+		MyLZW reset mode: .76
+		MyLZW monitor mode: .76
+medium.txt
+	original file size: 25 KB
+		compressed file size:
+		Unmodified LZW: 13 KB
+		MyLZW do nothing mode: 13 KB
+		MyLZW reset mode: 13 KB
+		MyLZW monitor mode: 13 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 1.92
+		MyLZW do nothing mode: 1.92
+		MyLZW reset mode: 1.92
+		MyLZW monitor mode: 1.92
+texts.tar
+	original file size: 1.4 MB
+	compressed file size:
+		Unmodified LZW: 1 MB
+		MyLZW do nothing mode: 598 KB
+		MyLZW reset mode: 590 KB
+		MyLZW monitor mode:598 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 1.4
+		MyLZW do nothing mode: 2.34
+		MyLZW reset mode: 2.37
+		MyLZW monitor mode: 2.34
+wacky.bmp
+	original file size: 922 KB
+	compressed file size:
+		Unmodified LZW: 4 KB
+		MyLZW do nothing mode: 4 KB
+		MyLZW reset mode: 4 KB
+		MyLZW monitor mode: 4 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: 230.5
+		MyLZW do nothing mode: 230.5
+		MyLZW reset mode: 230.5
+		MyLZW monitor mode: 230.5
+winnt256.bmp.
+	original file size: 157 KB
+	compressed file size:
+		Unmodified LZW: 159 KB
+		MyLZW do nothing mode: 63 KB 
+		MyLZW reset mode: 63 KB
+		MyLZW monitor mode: 63 KB
+	compression ratio (original file size / compressed file size):
+		Unmodified LZW: .98
+		MyLZW do nothing mode: 2.49
+		MyLZW reset mode: 2.49
+		MyLZW monitor mode: 2.49
