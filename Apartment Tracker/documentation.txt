@@ -1,0 +1,25 @@
+
+INITIAL THOUGHTS:
+When I began the project, I initially was planning on writing my own priority queue because the provided Priority Queues' IndexMinPQ and IndexMaxPQ from the book seemed like they would be more work to use. After I started writing the priority queue myself I found that it was going to be much easier to alter the provided code from the book slightly, and abstract away some functions that would be difficult to write and troubleshoot. 
+
+APTPQ CLASS:
+To decide how to implement the priority queue as specified in the instructions, it was clear to me that price and square footage were what I needed the priority of the PQ to be. As these values are independent of each other, and one needs to be max while the other a min, I could not think of a way to easily use one PQ. I decided to use two priority queues. A minPQ with price as the priority, because the minPQ had lowest value as highest priority. A maxPQ was used as the square footage as the priority, because the highest square footage would be easily accessible. The retrieval of both the overall minimum price and maximum square footage from their respective PQs are simply an O(1) operation still, because only the first index needs to be returned from the PQs. 
+
+To meet the indirection requirements of the PQs, I immediately though of using a HashMap. I instantiated a HashMap to use a String key, that will map to an integer value that is the index of the apartment, which is needed by the PQ code. Since the instructions state that the user must enter the apartment address, number, and zip, I will use all of these as the key by appending them to each other as it will be more unique than using just one of the attributes. The retrieval of the values associated with the keys are O(1). 
+
+I created functions in both IndexMinPQ.java and IndexMaxPQ.java that will update the apartments price and footage. The one that updates the footage is useless as the user is not allowed to update the footage, but I didn’t read far enough to see that before I started working, so I just left it in there. I also created minAptCity(String city) and maxAptCity(String city) that are used for retrieving the highest priority item that corresponds with a certain city. These are very similar to the functions that return the highest/lowest priority queue, but a for loop was used to iterate through the list starting at the highest priority, and return the highest priority apt that has a city field equal to the one the user entered. These functions, minAptCity(String city) and maxAptCity(String city) are worst case O(n). I probably could have used an additional data structure in the AptTracker class that stored the index of the highest footage and lowest price, but a compare would have had to compare to each of those when an apartment was added or updated, so I believe that this would have not been better than the O(n) runtime.
+
+I modified some of the parameters and functions in the IndexMinPQ.java and IndexMaxPQ.java to not implement comparable, because I didn’t really need it, and simply change the less and greater functions to use >,< on the price or square footage. This was a very important change that made sure that the PQs were using the correct values as priority.
+
+In summary, I believe all operations of the AptPQ and IndexMinPQ/IndexMaxPQ class are O(1) except for the minAptCity and maxAptCity, which are O(n)
+
+
+
+
+
+APT CLASS:
+An Apt class was created, that stores the address, apartment number, city, and zip codes as Strings, the square footage as an int, and price as a double. Strings were used because I wanted the address, apartment, and zip to all be the same type so they could easily be compared, appended, and used as a key in the HashMap.
+
+
+APTTRACKER CLASS:
+The AptTracker class was a simple text based interface that handled user input and called the appropriate functions in the AptPQ class with needed parameters.
