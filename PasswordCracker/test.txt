@@ -1,0 +1,105 @@
+Node currentNode = rootNode;
+		int index = 0; //index of//boolean added = false;
+		//char at index has to be on respective ith level
+		//every password is length 5
+		/*
+		 * Possibilites:
+		 * charAt(0) already is on first tier
+		 * 		- dont need to add
+		 * charAt(0) doesnt exist
+		 * 		- add to tier
+		 */
+		if(isEmpty(currentNode) && index == 0){
+			rootNode.letter = s.charAt(index);
+			index++;
+		
+			while(index < 5){				
+				currentNode.child = new Node(s.charAt(index));
+				currentNode = currentNode.child;
+				index++;
+			}
+			
+		}
+		//Dealing with index 0, has to be on root level
+		while(index < 5){
+			
+			
+		/*possible: a-z,0-9,6 others = 26+10+6 = 42, 42 possible lined nodes on top tier of list. 
+		this should be pruned
+		All of this can probably be encapsulated into a for loop, with the index being the level of the list
+		*/
+		//System.out.println("Dealing with index " + index + " and " + s.charAt(index));
+		
+		//Need to not make extra node for last thing on tier and 
+		
+			
+				//need to make sure node is empty first**** or else will overwrite	
+			
+			if(currentNode.letter == s.charAt(index) && index == 0){
+				//This should only be happeneing for index 0 i think
+				//first letter of word is already a node, goes to child
+				
+				index++;
+				//System.out.println("index " + index + " / " + s.charAt(index) + " already exists");
+				//current node is c, already exists, do nothing to this list but got to its child
+				
+				currentNode.child = new Node(); //Goes down a level
+				currentNode = currentNode.child;
+				
+				
+				
+				
+				}
+			else if(currentNode.letter != s.charAt(index) && currentNode.next == null){
+				//NEW
+				//current node is not char, but current node has siblings
+				//add char to next
+				currentNode.next = new Node(s.charAt(index));
+				currentNode = currentNode.next;
+				index++;
+			}
+			else if(currentNode.letter != s.charAt(index) && currentNode.next != null){
+				//NEW
+				currentNode = currentNode.next;
+				
+			}
+			else if(currentNode.letter == s.charAt(index)){
+				//NEW
+				if(!isEmpty(currentNode)){
+					currentNode = currentNode.child;
+				}
+				else if(index < 4){
+					index++;
+					currentNode.child = new Node(s.charAt(index));
+					currentNode = currentNode.child;
+				}
+			}
+
+			/*
+			else if(currentNode.child.letter != s.charAt(index) && currentNode.child.next == null){	
+				//current node is occupied by different char and next node is null
+				//creates next node and goes to its child
+				System.out.println("Inserting " + s.charAt(index) + " to .child " + currentNode.toChar());
+				currentNode.child = new Node(s.charAt(index));
+				currentNode = currentNode.child;
+				index++;
+				}
+			else if(currentNode.child.letter != s.charAt(index) && currentNode.child != null){
+				//current node is occupied with different char and next node is as well
+				//goes to next node
+				//System.out.println("already exists,goes to next");
+				currentNode = currentNode.child.next;
+				
+				}
+				*/
+			
+			//System.out.println("still index " + index);
+			}//while index loop
+		
+		return true;
+	}
+		
+	public boolean add(){
+		//can this be done recursively?
+		
+		return true;
