@@ -1,1 +1,1 @@
-# cs1501
+# cs1501 - Algorithm Implementation
